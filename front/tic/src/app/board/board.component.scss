@@ -1,10 +1,21 @@
 main {
-  display: grid;
-  grid-template-columns: repeat(3, 200px);
-  grid-gap: 0px;
+  padding-top: 100%;
+  position: relative;
 }
 
-app-square {
-  border: 1px gray solid;
-  height: 200px;
+.game {
+  margin: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(60px, 1fr));
+  grid-template-rows: repeat(3, minmax(60px, 1fr));
+  grid-gap: 8px;
+}
+
+.info {
+  padding: 8px;
 }
