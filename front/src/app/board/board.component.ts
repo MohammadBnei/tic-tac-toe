@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class BoardComponent implements OnInit {
   squares: any[];
   xIsNext: boolean;
-  winner: 'X' | 'O';
+  winner: 'X' | 'O' | 'draw';
 
   constructor() { }
 
@@ -34,6 +34,14 @@ export class BoardComponent implements OnInit {
         return 'info';
       default:
         return 'danger';
+    }
+  }
+
+  get winnerMessage() {
+    if (this.winner !== 'draw') {
+      return `Player ${this.winner} won the game!`;
+    } else {
+      return 'Nobody won!';
     }
   }
 
@@ -64,6 +72,10 @@ export class BoardComponent implements OnInit {
           squareA === this.squares[c]) {
         return squareA;
       }
+    }
+
+    if (!this.squares.includes(null)) {
+      return 'draw';
     }
 
     return null;

@@ -3,7 +3,7 @@
     Current Player : {{ player }}
   </h1>
   <h2 *ngIf="winner">
-    Player {{ winner }} won the game!
+    {{ winnerMessage }}
   </h2>
   <button nbButton status="{{winnerColor}}" (click)="newGame()">Start new Game</button>
 </div>
