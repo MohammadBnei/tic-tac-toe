@@ -4,18 +4,22 @@ main {
 }
 
 .game {
-  margin: 5px;
+  transform-origin: center;
+  transform: scale(0.8,0.8);
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   display: grid;
-  grid-template-columns: repeat(3, minmax(60px, 1fr));
-  grid-template-rows: repeat(3, minmax(60px, 1fr));
+  grid-template-columns: repeat(3, minmax(60px, 0.33fr));
+  grid-template-rows: repeat(3, minmax(60px, 0.33fr));
   grid-gap: 8px;
 }
 
 .info {
   padding: 8px;
+  text-align: center;
+  width: 100%;
+  margin: auto;
 }
