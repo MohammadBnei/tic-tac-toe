@@ -10,4 +10,5 @@ services:
       - ./front:/usr/src/app
     ports:
       - 3010:3010
+      - 9005:9005
     stdin_open: true

@@ -1,5 +1,8 @@
 FROM node
 WORKDIR /usr/src/app
-RUN npm install -g @angular/cli
+ENV TZ=Europe/Paris
+RUN apt-get update && apt-get install -y tzdata
 RUN chmod -R 777 .
-EXPOSE 3010
+RUN npm install -g @angular/cli
+COPY package.json .
+RUN npm i

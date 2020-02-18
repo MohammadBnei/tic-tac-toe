@@ -1,0 +1,77 @@
+[debug] [2020-02-18T10:42:50.988Z] ----------------------------------------------------------------------
+[debug] [2020-02-18T10:42:50.993Z] Command:       /usr/local/bin/node /usr/local/bin/firebase login
+[debug] [2020-02-18T10:42:50.995Z] CLI Version:   7.13.0
+[debug] [2020-02-18T10:42:50.995Z] Platform:      linux
+[debug] [2020-02-18T10:42:50.995Z] Node Version:  v13.7.0
+[debug] [2020-02-18T10:42:50.997Z] Time:          Tue Feb 18 2020 11:42:50 GMT+0100 (Central European Standard Time)
+[debug] [2020-02-18T10:42:50.998Z] ----------------------------------------------------------------------
+[debug] [2020-02-18T10:42:50.998Z] 
+[info] i  Firebase optionally collects CLI usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=668147135&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2020-02-18T10:44:11.452Z] ----------------------------------------------------------------------
+[debug] [2020-02-18T10:44:11.454Z] Command:       /usr/local/bin/node /usr/local/bin/firebase login:ci
+[debug] [2020-02-18T10:44:11.454Z] CLI Version:   7.13.0
+[debug] [2020-02-18T10:44:11.455Z] Platform:      linux
+[debug] [2020-02-18T10:44:11.455Z] Node Version:  v13.7.0
+[debug] [2020-02-18T10:44:11.455Z] Time:          Tue Feb 18 2020 11:44:11 GMT+0100 (Central European Standard Time)
+[debug] [2020-02-18T10:44:11.455Z] ----------------------------------------------------------------------
+[debug] [2020-02-18T10:44:11.455Z] 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=36548857&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2020-02-18T10:55:09.096Z] ----------------------------------------------------------------------
+[debug] [2020-02-18T10:55:09.102Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2020-02-18T10:55:09.102Z] CLI Version:   7.13.0
+[debug] [2020-02-18T10:55:09.102Z] Platform:      linux
+[debug] [2020-02-18T10:55:09.102Z] Node Version:  v13.7.0
+[debug] [2020-02-18T10:55:09.103Z] Time:          Tue Feb 18 2020 11:55:09 GMT+0100 (Central European Standard Time)
+[debug] [2020-02-18T10:55:09.103Z] ----------------------------------------------------------------------
+[debug] [2020-02-18T10:55:09.103Z] 
+[debug] [2020-02-18T10:55:09.120Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-18T10:55:09.121Z] > attempting to authenticate via app default credentials
+[debug] [2020-02-18T10:55:09.161Z] ! auto-auth error: Could not load the default credentials. Browse to https://developers.google.com/accounts/docs/application-default-credentials for more information.
+[debug] [2020-02-18T10:55:09.162Z] > no credentials could be found or automatically retrieved
+[error] 
+[error] Error: Command requires authentication, please run firebase login
+[debug] [2020-02-18T10:55:11.420Z] Error: EBUSY: resource busy or locked, unlink '/usr/src/app/tic/firebase-debug.log'
+    at Object.unlinkSync (fs.js:1068:3)
+    at process.<anonymous> (/usr/local/lib/node_modules/firebase-tools/lib/bin/firebase.js:68:12)
+    at process.emit (events.js:333:22)
+    at process.exit (internal/process/per_thread.js:166:15)
+    at Timeout._onTimeout (/usr/local/lib/node_modules/firebase-tools/lib/errorOut.js:19:17)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2020-02-18T10:59:26.805Z] ----------------------------------------------------------------------
+[debug] [2020-02-18T10:59:26.807Z] Command:       /usr/local/bin/node /usr/local/bin/firebase login
+[debug] [2020-02-18T10:59:26.807Z] CLI Version:   7.13.0
+[debug] [2020-02-18T10:59:26.807Z] Platform:      linux
+[debug] [2020-02-18T10:59:26.807Z] Node Version:  v13.7.0
+[debug] [2020-02-18T10:59:26.810Z] Time:          Tue Feb 18 2020 11:59:26 GMT+0100 (Central European Standard Time)
+[debug] [2020-02-18T10:59:26.811Z] ----------------------------------------------------------------------
+[debug] [2020-02-18T10:59:26.811Z] 
+[info] i  Firebase optionally collects CLI usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=781079723&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2020-02-18T10:59:41.373Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token  
+
+[debug] [2020-02-18T10:59:41.516Z] <<< HTTP RESPONSE 200
+[info] 
+[info] ✔  Success! Logged in as mohammadamine.banaei@gmail.com
+[debug] [2020-02-18T10:59:45.709Z] Error: EBUSY: resource busy or locked, unlink '/usr/src/app/tic/firebase-debug.log'
+    at Object.unlinkSync (fs.js:1068:3)
+    at process.<anonymous> (/usr/local/lib/node_modules/firebase-tools/lib/bin/firebase.js:68:12)
+    at process.emit (events.js:333:22)
+    at process.topLevelDomainCallback (domain.js:137:15)
