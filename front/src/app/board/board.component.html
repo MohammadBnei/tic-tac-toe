@@ -5,7 +5,7 @@
   <h2 *ngIf="winner">
     Player {{ winner }} won the game!
   </h2>
-  <button nbButton outline status="danger" (click)="newGame()">Start new Game</button>
+  <button nbButton status="{{winnerColor}}" (click)="newGame()">Start new Game</button>
 </div>
 
 <main>

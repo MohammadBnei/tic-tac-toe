@@ -26,6 +26,17 @@ export class BoardComponent implements OnInit {
     return this.xIsNext ? 'X' : 'O';
   }
 
+  get winnerColor() {
+    switch (this.winner) {
+      case 'X':
+        return 'success';
+      case 'O':
+        return 'info';
+      default:
+        return 'danger';
+    }
+  }
+
   makeMove(idx: number) {
     if (!this.squares[idx] && !this.winner) {
       this.squares.splice(idx, 1, this.player);
