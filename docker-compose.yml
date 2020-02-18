@@ -1,7 +1,7 @@
 version: '2.1'
 
 services:
-  angular_course:
+  angular:
     container_name: angular
     build: ./front
     environment:
@@ -11,4 +11,14 @@ services:
     ports:
       - 3010:3010
       - 9005:9005
+    stdin_open: true
+  python:
+    container_name: python
+    build: ./back
+    environment:
+      NODE_ENV: development
+    volumes:
+      - ./back:/usr/src/app
+    ports:
+      - 3011:3011
     stdin_open: true
