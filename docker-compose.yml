@@ -21,4 +21,13 @@ services:
       - ./back:/usr/src/app
     ports:
       - 3011:3011
+    links:
+      - mongo
     stdin_open: true
+  mongo:
+    image: mongo
+    hostname: mongo
+    healthcheck:
+      test: ["CMD","mongo", "--quiet", "--eval", "'quit(db.runCommand({ ping: 1 }).ok ? 0 : 2)'"]
+    ports:
+      - 27017:27017
