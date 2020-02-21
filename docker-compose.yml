@@ -1,4 +1,4 @@
-version: '2.1'
+version: '3.7'
 
 services:
   angular:
@@ -15,15 +15,14 @@ services:
   python:
     container_name: python
     build: ./back
-    environment:
-      NODE_ENV: development
+    env_file: .env.python
     volumes:
       - ./back:/usr/src/app
     ports:
       - 3011:3011
     links:
       - mongo
-    stdin_open: true
+    entrypoint: python3 run.py
   mongo:
     image: mongo
     hostname: mongo
