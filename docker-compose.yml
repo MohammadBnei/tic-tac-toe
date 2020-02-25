@@ -21,12 +21,20 @@ services:
     ports:
       - 3011:3011
     links:
-      - mongo
+      - db
     entrypoint: python3 run.py
-  mongo:
-    image: mongo
-    hostname: mongo
-    healthcheck:
-      test: ["CMD","mongo", "--quiet", "--eval", "'quit(db.runCommand({ ping: 1 }).ok ? 0 : 2)'"]
+  db:
+    image: postgres
+    hostname: postgres
+    container_name: postgres
+    restart: always
+    environment: 
+      POSTGRES_PASSWORD: postpass
+      POSTGRES_USER: tictac
     ports:
-      - 27017:27017
+        - 54320:5432
+  adminer:
+    image: adminer
+    restart: always
+    ports: 
+      - 8080:8080
