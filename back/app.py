@@ -3,14 +3,17 @@ from flask_bcrypt import Bcrypt
 from flask_restful import Api
 from flask_jwt_extended import JWTManager
 from flask_mail import Mail
+from dotenv import load_dotenv
 import os
 
 from resources.errors import errors
 from database.db import initialize_db
 
+load_dotenv()
 
 app = Flask(__name__)
 env_config = {
+    'ENVIRONMENT': os.getenv('ENVIRONMENT'),
     'JWT_SECRET_KEY': os.getenv('JWT_SECRET_KEY'),
     'MAIL_SERVER': os.getenv('MAIL_SERVER'),
     'MAIL_PORT': os.getenv('MAIL_PORT'),

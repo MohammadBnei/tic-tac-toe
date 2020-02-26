@@ -22,7 +22,7 @@ services:
       - 3011:3011
     links:
       - mongo
-    entrypoint: python3 run.py
+    stdin_open: true
   mongo:
     image: mongo
     hostname: mongo

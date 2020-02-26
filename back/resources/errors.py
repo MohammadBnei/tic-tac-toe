@@ -4,6 +4,9 @@ class InternalServerError(Exception):
 class SchemaValidationError(Exception):
     pass
 
+class ValidationError(Exception):
+    pass
+
 class ExpiredTokenError(Exception):
     pass
 
@@ -19,7 +22,7 @@ class DeletingMovieError(Exception):
 class MovieNotExistsError(Exception):
     pass
 
-class EmailAlreadyExistsError(Exception):
+class EmailOrNameAlreadyExistsError(Exception):
     pass
 
 class UnauthorizedError(Exception):
@@ -68,8 +71,8 @@ errors = {
          "message": "Movie with given id doesn't exists",
          "status": 400
      },
-     "EmailAlreadyExistsError": {
-         "message": "User with given email address already exists",
+     "EmailOrNameAlreadyExistsError": {
+         "message": "User with given email or name already exists",
          "status": 400
      },
      "UnauthorizedError": {
